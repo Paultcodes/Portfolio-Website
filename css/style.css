@@ -1,0 +1,189 @@
+:root {
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #baccc3;
+}
+
+.container .logo {
+    font-size: 30px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: aqua;
+    
+}
+
+.navbar .container a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color:#e23652;;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main .container pre {
+    font-size: 50px;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.main .container pre::after{
+    content: ' \275A';
+    animation: color-change 1s infinite;
+}
+
+.button-section .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button-section .button-row button {
+    margin: 5px;
+    border-radius: 7000px;
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    margin: 50px;
+    box-shadow: rgba(231, 65, 65, 0.17) 0px -23px 25px 0px inset, rgba(236, 64, 64, 0.15) 0px -36px 30px 0px inset, rgba(240, 81, 81, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.button-section .button-row button:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+    cursor: pointer;
+}
+
+.button-section .button-row a {
+    color: #e23652;
+    display: flex;
+    justify-content: center ;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.project-section .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 700px;
+    margin-top: 20px;
+    padding-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.project-section .projects img {
+    width: 500px;
+    margin: 20px;
+}
+
+.project-section .projects .image-big {
+    width: 800px;
+}
+
+.project-section .projects h3 {
+    text-align: center;
+
+}
+
+.project-section .projects .image-small:hover {
+    box-shadow: inset 0px 0px 8px #e23652, 0 0 15px #e23652;
+    width: 510px;
+
+}
+
+.project-section .projects .image-big:hover {
+    box-shadow: inset 0px 0px 8px #e23652, 0 0 15px #e23652;
+    width: 810px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes color-change {
+  0% { color: rgba(250, 235, 215, 0); }
+  50% { color: rgb(0, 0, 0); }
+  100% { color: rgba(250, 235, 215, 0); }
+}
+
+.main .container img {
+    border-radius: 70000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .main .container pre {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .project-section .projects .image-big {
+        width: 500px;
+    }
+     /* Width is set to 505px on hover so that larger image doesn't get cut off when hovering in smaller screen */
+    .project-section .projects .image-big:hover {
+        width: 505px;
+    }
+
+
+
+    
+}
+
