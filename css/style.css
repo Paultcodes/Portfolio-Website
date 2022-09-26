@@ -10,8 +10,14 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #baccc3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, #9e9ca8 , #30566e);
+}
+
+.png {
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
 }
 
 .container .logo {
@@ -33,7 +39,7 @@ body {
 }
 
 .navbar .container a:hover {
-    color: #414142;
+    color: #8787e9;
 }
 
 .navbar ul {
@@ -49,13 +55,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color:#e23652;
+    background-color:#3b4052;
     height: 60px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .main .container pre {
     font-size: 50px;
+    color: rgb(25, 26, 63);
 }
 
 .main .container {
@@ -63,12 +70,19 @@ body {
     justify-content: space-around;
     margin-top: 50px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .main .container pre::after{
     content: ' \275A';
     animation: color-change 1s infinite;
 }
+
+@keyframes color-change {
+    0% { color: rgba(250, 235, 215, 0); }
+    50% { color: rgb(0, 0, 0); }
+    100% { color: rgba(250, 235, 215, 0); }
+  }
 
 .button-section .button-row {
     display: flex;
@@ -83,10 +97,10 @@ body {
     width: 100px;
     height: 50px;
     font-size: 40px;
-    background: none;
+    background-color: #fffbf8 ;
     border: none;
     margin: 50px;
-    box-shadow: rgba(231, 65, 65, 0.17) 0px -23px 25px 0px inset, rgba(236, 64, 64, 0.15) 0px -36px 30px 0px inset, rgba(240, 81, 81, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(2, 2, 2, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .button-section .button-row button:hover {
@@ -95,7 +109,7 @@ body {
 }
 
 .button-section .button-row a {
-    color: #e23652;
+    color: #092f5a;
     display: flex;
     justify-content: center ;
 }
@@ -107,7 +121,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    text-decoration: underline;
 }
 
 .project-section .projects {
@@ -117,6 +130,7 @@ body {
     height: 900px;
     padding-top: 30px;
     padding-top: 100px;
+    margin-top: 80px;
 }
 
 .project-section .projects img {
@@ -146,6 +160,12 @@ body {
 
 .about-me .about-me-section {
     height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me {
+    margin-top: 100px;
 }
 
 .about-me h2 {
@@ -154,54 +174,56 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    text-decoration: underline;
 }
 
 
 .about-me p {
     text-align: center;
+    height: 200px;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 450;
+    width: 1000px;
+    height: 300px;
+}
+
+.main .container .paul {
+    width: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 200px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes color-change {
-  0% { color: rgba(250, 235, 215, 0); }
-  50% { color: rgb(0, 0, 0); }
-  100% { color: rgba(250, 235, 215, 0); }
+.footer-section .contact ul {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    height: 100px;
+    flex-wrap: wrap;
+    font-size: 20px;
 }
 
-.main .container img {
-    border-radius: 70000px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
 
 
 @media screen and (max-width: 1100px) {
     .main .container pre {
         font-size: 20px;
         margin-bottom: 30px;
+        font-weight: 900;
+    }
+
+    .main .container .paul {
+        width: 400px;
+    }
+
+    .project-section .projects .image-small {
+        width: 400px;
     }
 
     .project-section .projects .image-big {
-        width: 500px;
+        width: 400px;
     }
      /* Width is set to 505px on hover so that larger image doesn't get cut off when hovering in smaller screen */
     .project-section .projects .image-big:hover {
@@ -210,8 +232,41 @@ body {
 
 
 
+    
+
+
+
+
+
+   
+
+
+
+
+
 
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
