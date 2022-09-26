@@ -1,8 +1,3 @@
-:root {
-    --red-color: #e23652;
-
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -72,7 +67,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
-
+/* Gives the illusion of the text cursor using animation*/
 .main .container pre::after{
     content: ' \275A';
     animation: color-change 1s infinite;
@@ -148,7 +143,7 @@ body {
 }
 
 .project-section .projects .image-small:hover {
-    box-shadow: inset 0px 0px 8px #7e7b7c, 0 0 15px #7e7b7c;
+    box-shadow: inset 0px 0px 8px #ffffff, 0 0 15px #ffffff;
     width: 510px;
 
 }
@@ -222,12 +217,16 @@ body {
         width: 400px;
     }
 
+    .project-section .projects .image-small:hover {
+        width: 450px;
+    }
+
     .project-section .projects .image-big {
         width: 400px;
     }
      /* Width is set to 505px on hover so that larger image doesn't get cut off when hovering in smaller screen */
     .project-section .projects .image-big:hover {
-        width: 505px;
+        width: 450px;
     }
 
 
