@@ -1,271 +1,235 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right, #9e9ca8 , #30566e);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to right, #9e9ca8, #30566e);
 }
 
 .png {
-    position: absolute;
-    z-index: -1;
-    opacity: 50%;
+  position: absolute;
+  z-index: -1;
+  opacity: 50%;
 }
 
 .container .logo {
-    font-size: 30px;
-    margin-left: 20px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 10px;
+  font-size: 30px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
 }
 
 .navbar {
-    background-color: aqua;
-    
+  background-color: aqua;
 }
 
 .navbar .container a {
-    text-decoration: none;
-    margin-right: 20px;
-    color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  color: white;
 }
 
 .navbar .container a:hover {
-    color: #8787e9;
+  color: #8787e9;
 }
 
 .navbar ul {
-    display: flex;
-    margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .navbar li {
-    list-style: none;
+  list-style: none;
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color:#3b4052;
-    height: 60px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #3b4052;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .main .container pre {
-    font-size: 50px;
-    color: rgb(25, 26, 63);
+  font-size: 50px;
+  color: rgb(25, 26, 63);
 }
 
 .main .container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 /* Gives the illusion of the text cursor using animation*/
-.main .container pre::after{
-    content: ' \275A';
-    animation: color-change 1s infinite;
+.main .container pre::after {
+  content: " \275A";
+  animation: color-change 1s infinite;
 }
 
 @keyframes color-change {
-    0% { color: rgba(250, 235, 215, 0); }
-    50% { color: rgb(0, 0, 0); }
-    100% { color: rgba(250, 235, 215, 0); }
+  0% {
+    color: rgba(250, 235, 215, 0);
   }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgba(250, 235, 215, 0);
+  }
+}
 
 .button-section .button-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .button-section .button-row button {
-    margin: 5px;
-    border-radius: 7000px;
-    width: 100px;
-    height: 50px;
-    font-size: 40px;
-    background-color: #fffbf8 ;
-    border: none;
-    margin: 50px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(2, 2, 2, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin: 5px;
+  border-radius: 7000px;
+  width: 100px;
+  height: 50px;
+  font-size: 40px;
+  background-color: #fffbf8;
+  border: none;
+  margin: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(2, 2, 2, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .button-section .button-row button:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
 }
 
 .button-section .button-row a {
-    color: #092f5a;
-    display: flex;
-    justify-content: center ;
+  color: #092f5a;
+  display: flex;
+  justify-content: center;
 }
 
 .header-one {
-    margin-top: 90px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+  margin-top: 90px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 
 .project-section .projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 900px;
-    padding-top: 30px;
-    padding-top: 100px;
-    margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 900px;
+  padding-top: 30px;
+  padding-top: 100px;
+  margin-top: 80px;
 }
 
 .project-section .projects img {
-    width: 500px;
-    margin: 20px;
+  width: 500px;
+  margin: 20px;
 }
 
 .project-section .projects .image-big {
-    width: 800px;
+  width: 800px;
 }
 
 .project-section .projects h3 {
-    text-align: center;
-
+  text-align: center;
 }
 
 .project-section .projects .image-small:hover {
-    box-shadow: inset 0px 0px 8px #ffffff, 0 0 15px #ffffff;
-    width: 510px;
-
+  box-shadow: inset 0px 0px 8px #ffffff, 0 0 15px #ffffff;
+  width: 510px;
 }
 /* Seperate hover effects because first image is larger than the others */
 .project-section .projects .image-big:hover {
-    box-shadow: inset 0px 0px 8px #ffffff, 0 0 15px #ffffff;
-    width: 810px;
+  box-shadow: inset 0px 0px 8px #ffffff, 0 0 15px #ffffff;
+  width: 810px;
 }
 
 .about-me .about-me-section {
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .about-me {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .about-me h2 {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 
-
 .about-me p {
-    text-align: center;
-    height: 200px;
-    padding: 40px;
-    font-size: 20px;
-    font-weight: 450;
-    width: 1000px;
-    height: 300px;
+  text-align: center;
+  height: 200px;
+  padding: 40px;
+  font-size: 20px;
+  font-weight: 450;
+  width: 1000px;
+  height: 300px;
 }
 
 .main .container .paul {
-    width: 500px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    border-radius: 200px;
+  width: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 200px;
 }
-
 
 .footer-section .contact ul {
-    margin: 50px;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    height: 100px;
-    flex-wrap: wrap;
-    font-size: 20px;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  height: 100px;
+  flex-wrap: wrap;
+  font-size: 20px;
 }
-
-
-
 
 @media screen and (max-width: 1100px) {
-    .main .container pre {
-        font-size: 20px;
-        margin-bottom: 30px;
-        font-weight: 900;
-    }
+  .main .container pre {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }
 
-    .main .container .paul {
-        width: 400px;
-    }
+  .main .container .paul {
+    width: 400px;
+  }
 
-    .project-section .projects .image-small {
-        width: 400px;
-    }
+  .project-section .projects .image-small {
+    width: 400px;
+  }
 
-    .project-section .projects .image-small:hover {
-        width: 450px;
-    }
+  .project-section .projects .image-small:hover {
+    width: 450px;
+  }
 
-    .project-section .projects .image-big {
-        width: 400px;
-    }
-     /* Width is set to 505px on hover so that larger image doesn't get cut off when hovering in smaller screen */
-    .project-section .projects .image-big:hover {
-        width: 450px;
-    }
-
-
-
-    
-
-
-
-
-
-   
-
-
-
-
-
-
-
-    
+  .project-section .projects .image-big {
+    width: 400px;
+  }
+  /* Width is set to 505px on hover so that larger image doesn't get cut off when hovering in smaller screen */
+  .project-section .projects .image-big:hover {
+    width: 450px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
