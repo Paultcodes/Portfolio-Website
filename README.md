@@ -12,3 +12,5 @@ Clone the repository by copying the SSH and key and running "git clone" follwed 
 Here is a screenshot of the website and the link to the URL.
 
 ![Paul Taylor Portfolio](https://user-images.githubusercontent.com/111453328/192381745-918f60b8-07d6-4973-a99d-a319e1306138.png)
+
+https://paultcodes.github.io/Portfolio-Website/
